@@ -56,6 +56,7 @@ if (isset($_POST['add'])) {
 		$telp = $all_data[$i]['E'];
 		$sql .= " ('$uuid', '$no_id', '$nama', '$jk', '$alamat', '$telp'),";
 	}
+	die(var_dump($sql));
 	$sql = substr($sql, 0, -1);
 	mysqli_query($con, $sql) or die (mysqli_error($con));
 	unlink($target_file);

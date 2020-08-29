@@ -14,7 +14,7 @@ if (mysqli_connect_errno()) {
 
 // fungsi base_url()
 function base_url($url = null) {
-	$base_url = "http://localhost/atha's-app/inspirasi/rumah-sakit";
+	$base_url = "http://localhost/hospital-app";
 	if ($url != null) {
 		return $base_url."/".$url;
 	} else {
